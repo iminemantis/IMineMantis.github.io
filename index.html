@@ -12,6 +12,9 @@
 
     <meta property="og:image" content="http://www.clarkeb.art/images/1x1-placeholder.png">
 
+    <meta property="twitter:image" content="http://www.clarkeb.art/images/1x1-placeholder.png">
+    <meta property="twitter:card" content="placeholder image might become a logo or smth">
+
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="style.css">
@@ -26,7 +29,7 @@
         <a href="/index.html"><i class="fas fa-home header-links" id="home-link"></i></a>
 
         <div class="links-container pc">
-            <a href="#" class="links">projects</a>
+            <a href="/projects.html" class="links">projects</a>
             <a href="#" class="links">about</a>
         </div>
 
@@ -44,34 +47,74 @@
 
         <div id="use-icons">
             <div class="icon">
-                <a href="https://www.blender.org/" target="_blank">
+                <a href="https://www.blender.org/" target="_blank" onmouseover="changeText(1)" title="blender">
                     <img src="/images/blender_logo_kit/square/blender_icon_256x256.png" alt="blender logo">
                 </a>
             </div>
             <div class="icon">
-                <img src="/images/information icon.png" alt="about me">
+                <img src="/images/information icon.png" alt="about me" onmouseover="changeText(2)" title="short about me">
             </div>
             <div class="icon">
-                <a href="https://natrongithub.github.io/" target="_blank">
+                <a href="https://natrongithub.github.io/" target="_blank" onmouseover="changeText(3)" title="natron">
                     <img src="/images/Natron_icon.svg" alt="natron logo">
                 </a>
             </div>
         </div>
 
         <div id="about">
-            <div class="blender">
+            <div class="about-text hidden" id="blender">
+
+                <h1>Blender</h1>
+
+                <div class="body">
+                    <p>Blender free and open source software 3D software that can be used for modeling, sculpting, textue painting, rigging and more.</p>
+                    <p>I use blender for all my modeling that i do. I have been using blender for a couple years now, since before 2.8, and have a lot of eperience with the program. The software is profesional grade and have been used to make a lot of amazing animation and images e.g. 
+                        <a href="https://youtu.be/WhWc3b3KhnY" target="_blank">spring</a>,
+                        <a href="https://youtu.be/_cMxraX_5RE" target="_blank">sprite fright</a>, or
+                        <a href="https://www.artstation.com/artwork/mDW6Yd" target="blank">this</a> 3d enviroment work by "Jasmin Habezail-Fekri"</p>
+                </div>
 
             </div>
-            <div class="about-me">
+            <div class="about-text " id="about-me">
+
+                <div class="body">
+                    i am me,,, or am i idk at this point
+                </div>
 
             </div>
-            <div class="natron">
+            <div class="about-text hidden" id="natron">
+
+                <h1>Natron</h1>
+
+                <div class="body">
+                    havent used this much but will continue to use it and try to learn how to use it fully
+                </div>
 
             </div>
         </div>
+
+        <div id="contact">
+
+        </div>
     </div>
     <footer id="footer">
-
+        <div class="by-me">
+            Site made by me! :)
+        </div>
+        <div class="icons">
+            <!--
+            <div class="artstation icon" title="artstation">
+                <a href="https://www.artstation.com/iminemantis">
+                    <i class="fab fa-artstation"></i>
+                </a>
+            </div>
+            -->
+            <div class="email icon" title="email">
+                <a href="mailto:iminemantis@pm.me?subject=Mail from Website" target="_blank">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

@@ -23,3 +23,23 @@ function headerSize() {
         document.getElementById("home-link").classList.remove("smaller")
     }
 }
+
+function changeText(num) {
+    switch (num) {
+        case 1:
+            document.getElementById("blender").classList.remove("hidden")
+            document.getElementById("about-me").classList.add("hidden")
+            document.getElementById("natron").classList.add("hidden")
+            break;
+        case 2:
+            document.getElementById("blender").classList.add("hidden")
+            document.getElementById("about-me").classList.remove("hidden")
+            document.getElementById("natron").classList.add("hidden")
+            break;
+        case 3:
+            document.getElementById("blender").classList.add("hidden")
+            document.getElementById("about-me").classList.add("hidden")
+            document.getElementById("natron").classList.remove("hidden")
+            break;
+    }
+}
