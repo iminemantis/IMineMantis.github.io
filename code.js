@@ -24,6 +24,8 @@ function headerSize() {
     }
 }
 
+
+//change about text when hovering on icon
 function changeText(num) {
     switch (num) {
         case 1:
