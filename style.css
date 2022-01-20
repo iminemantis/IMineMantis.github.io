@@ -142,6 +142,7 @@ footer .icons .icon {
 .parallax {
     background-image: url("/images/finished\ sign\ larger.png");
 
+    position: relative;
     width: 100%;
     height: 93vh;
     /*aspect-ratio: 16 / 9;*/
@@ -168,6 +169,38 @@ footer .icons .icon {
     background: radial-gradient( rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100% position(top));
 }
 
+@keyframes bounce {
+    0% {padding-top: 4vh;}
+    15% {padding-top: 0;}
+    30% {padding-top: 4vh;}
+    45% {padding-top: 1vh;}
+    60% {padding-top: 4vh;}
+    100% {padding-top: 4vh;}
+}
+
+#hero .parallax .arrow{
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+    font-size: 3vh;
+
+    padding-top: 80vh;
+
+
+}
+
+#hero .parallax .arrow .fas {
+    color: var(--col4);
+    padding-top: 5vh;
+}
+
+.animated {
+    animation: bounce 2s ease-in-out 0s infinite none;
+}
 /* icon bar*/
 
 #use-icons {
@@ -234,6 +267,12 @@ footer .icons .icon {
     position: relative;
 }
 
+#image-gallery .image-tile .below {
+    position: relative;
+    height: 100%;
+    display: block;
+}
+
 #image-gallery .image-tile .below img {
     width: 100%;
     display: block;
@@ -249,14 +288,13 @@ footer .icons .icon {
     width: 100%;
     height: 100%;
 
-    padding: 5% 0 0 0;
+    padding: 50% 0 0 0;
 
     text-align: center;
-
     /*
     display: none;
     */
-    opacity: 0; 
+    opacity: 1; 
     transition: .5s;
 
     -webkit-user-select: none;
@@ -291,6 +329,22 @@ footer .icons .icon {
 #image-gallery .image-tile a:hover ~ .below img{
     filter: saturate(20%) brightness(80%) contrast(95%);
     transition: 0.3s;
+}
+
+#all-link {
+    height: 8vh;
+    padding-top: 2vh;
+    text-align: center;
+    font-size: 2em;
+}
+
+#all-link a {
+    text-decoration: none;
+    color: var(--col4);
+}
+
+#all-link a:hover {
+    color: var(--col5);
 }
 
 /* all projects */
