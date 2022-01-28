@@ -171,10 +171,10 @@ footer .icons .icon {
 
 @keyframes bounce {
     0% {padding-top: 4vh;}
-    15% {padding-top: 0;}
-    30% {padding-top: 4vh;}
-    45% {padding-top: 1vh;}
-    60% {padding-top: 4vh;}
+    10% {padding-top: 0;}
+    20% {padding-top: 4vh;}
+    30% {padding-top: 1vh;}
+    40% {padding-top: 4vh;}
     100% {padding-top: 4vh;}
 }
 
@@ -189,17 +189,24 @@ footer .icons .icon {
     font-size: 3vh;
 
     padding-top: 80vh;
-
-
 }
 
 #hero .parallax .arrow .fas {
+    position: relative;
     color: var(--col4);
     padding-top: 5vh;
 }
 
+#hero .parallax .arrow .fas a {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .animated {
-    animation: bounce 2s ease-in-out 0s infinite none;
+    animation: bounce 3s ease-in-out 0s infinite none;
 }
 /* icon bar*/
 
