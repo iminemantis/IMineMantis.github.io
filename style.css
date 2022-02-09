@@ -22,6 +22,8 @@
 
     font-family: var(--font);
     color: var(--col3);
+
+    scroll-behavior: smooth;
 }
 
 /* header */
@@ -250,8 +252,16 @@ footer .icons .icon {
     font-size: 3.5em;
 }
 
+#about .about-text h1 a{
+    text-decoration: none;
+}
+
 #about #natron h1 {
     color: #cad8e6;
+}
+
+#blender h1 a {
+    color: orange;
 }
 
 #about .about-text .body {
@@ -266,9 +276,9 @@ footer .icons .icon {
 /* projects site*/
 #image-gallery {
     width: 100%;
-    columns: 30vw 2;
+    columns: 400px 2;
     column-gap: 0;
-
+    
     padding: 5vh 10vw 0 10vw;
 }
 
