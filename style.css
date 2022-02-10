@@ -172,7 +172,11 @@ footer .icons .icon {
     
     background: radial-gradient( rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 100% position(top));
 }
-
+@media screen and (max-width: 600px){
+    .parallax .text {
+        padding-top: 40%;
+    }
+}
 @keyframes bounce {
     0% {padding-top: 4vh;}
     10% {padding-top: 0;}
@@ -273,6 +277,14 @@ footer .icons .icon {
     display: none;
 }
 
+@media screen and (max-width:600px){
+    #about{
+        height: 50vh;
+    }
+    #about .about-text .body {
+        font-size: 0.75em;
+    }
+}
 /* projects site*/
 #image-gallery {
     width: 100%;
