@@ -1,0 +1,18 @@
+/* all projects */
+
+.all-projects {
+    columns: 25vw 4;
+}
+
+/*
+#image-gallery .image-tile a:hover img {
+    filter: saturate(20%) brightness(80%) contrast(95%);
+    transition: 0.2s;
+}
+
+#image-gallery .image-tile a:hover + .text {
+    display: block;
+
+    opacity: 1;
+    transition: 0.2;
+}

@@ -1,0 +1,161 @@
+/* setup */
+@font-face {
+    font-family: Lato;
+    src: url(/font/Lato/Lato-Regular.ttf);
+}
+
+:root {
+    --font: Lato;
+
+    --col1: #0f060a;
+    --col2: #627c85;
+    --col3: #fbfef9;
+    --col4: #f49e4c;
+    --col5: #e7b98e;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+
+    font-family: var(--font);
+    color: var(--col3);
+
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+/* header */
+
+header {
+    z-index: 10;
+
+    position: sticky;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7vh;
+    max-height: 100px;
+
+    background: var(--col2);
+    background: linear-gradient(90deg, var(--col2) 0%, var(--col1) 500%);
+
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1vh;
+
+    transition: 0.2s linear;
+}
+
+/* smaller header parts*/
+header.smaller {
+    height: 5vh;
+    transition: 0.2s linear;
+    padding-top: 0.5vh;
+}
+
+.links.smaller {
+    font-size: 1.75em;
+    transition: 0.2s linear;
+}
+
+.fas.smaller{
+    font-size: 4vh;
+
+    transition: 0.2s linear;
+}
+/* not smaller header parts now*/
+
+header a{
+    text-decoration: none;
+    color: var(--col3);
+}
+
+header a:hover{
+    color: var(--col4);
+
+    transform: scale(1.1) rotate(-5deg);
+    transition: 0.2s;
+}
+
+header .fas {
+    color: var(--col4);
+    font-size: 5vh;
+
+    transition: 0.2s linear;
+}
+
+header .links-container a {
+    font-size: 2em;
+
+    transition: 0.2s linear;
+}
+
+header .links-container a:not(:first-child) {
+    padding-left: 5vw;
+}
+
+
+
+
+
+/* footer */
+
+footer {
+    height: 7vh;
+    background: var(--col2);
+
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .by-me {
+    text-align: center;
+
+    padding: 2.5vh 0 0 4vh;
+}
+
+footer .icons {
+    width: 5vw;
+    padding:  2vh 4vw 0 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .icons .icon {
+    font-size: 3vh;
+}
+
+
+
+
+
+/* main site page */
+
+#page {
+    min-height: 100vh;
+    background: var(--col1);
+    background: linear-gradient(270deg, var(--col1) 0%, var(--col2) 1500%);
+}
+
+
+
+
+
+/*line on the page*/
+hr {
+    height: 3px;
+    background-image: -webkit-linear-gradient(left, rgba(244, 158, 76,0), rgba(244, 158, 76,1), rgba(244, 158, 76,0));
+    background-image: -moz-linear-gradient(left, rgba(244, 158, 76,0), rgba(244, 158, 76,1), rgba(244, 158, 76,0));
+    background-image: -ms-linear-gradient(left, rgba(244, 158, 76,0), rgba(244, 158, 76,1), rgba(244, 158, 76,0));
+    background-image: -o-linear-gradient(left, rgba(244, 158, 76,0), rgba(244, 158, 76,1), rgba(244, 158, 76,0));
+    border: 0;
+    margin: 0 5vw ;
+}

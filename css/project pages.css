@@ -1,0 +1,62 @@
+/*single project pages*/
+
+#page .title{
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;    
+}
+
+/*split layout code*/
+
+#page .split {
+    position: relative;
+    padding-top: 5vh;
+
+}
+
+#page .split .text-box{
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 97vh;
+    height: 100%;
+
+    background-attachment: fixed;
+    /*
+    background-position: center;
+    */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50% 5vh;
+    background-position-y: 100%;
+
+    background-color: var(--col2);
+    
+    padding: 10vh 0 10vh 0;
+}
+
+#page .split .text-box .text {
+    background-color: rgba(98, 124, 133,0.7);
+    border-radius: 20px;
+
+    padding: 2vh;
+    margin: 0 10vw 0 50vw;
+    height: 120vh;
+}
+
+#page .split .text-box .text h2 {
+    text-align: center;
+}
+
+
+
+/*image layout*/
+
+#pages .images {
+    position: relative;
+    min-height: 50vh;
+}

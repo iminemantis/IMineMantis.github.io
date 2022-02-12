@@ -1,0 +1,71 @@
+/* icon bar*/
+
+#use-icons {
+    height: 20%;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#use-icons .icon a {
+    display: block;
+}
+
+#use-icons .icon img{
+    width: 15vw;
+    filter: saturate(0%) brightness(75%);
+    transition: 0.5s;
+}
+
+#use-icons .icon img:hover {
+    filter: saturate(100%) brightness(100%);
+    transition: 0.1s;
+}
+
+/* about the programs i use and about me */
+
+#about{
+    height: 30vh;
+    text-align: center;
+}
+
+#about .about-text h1{
+    padding: 2vh;
+    color: var(--col4);
+    font-size: 3.5em;
+}
+
+#about .about-text h1 a{
+    text-decoration: underline;
+}
+
+#blender h1 a{
+    color: #e87d0d;
+
+}
+
+#about-me .body h1{
+    color: #00d1a4;
+}
+
+#natron h1 a{
+    color: #ffffff;
+}
+
+#about .about-text .body {
+    padding: 0 20vw 0 20vw;
+    font-size: 1.25em;
+} 
+
+#about .hidden {
+    display: none;
+}
+
+@media screen and (max-width:600px){
+    #about{
+        height: 50vh;
+    }
+    #about .about-text .body {
+        font-size: 0.75em;
+    }
+}
