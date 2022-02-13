@@ -45,3 +45,66 @@ function changeText(num) {
             break;
     }
 }
+
+//change image when hovering over it
+function changeImg1(num) {
+    switch(num) {
+        case 1:
+            document.getElementById("one1").classList.remove("hidden")
+            document.getElementById("two1").classList.add("hidden")
+            document.getElementById("three1").classList.add("hidden")
+            document.getElementById("four1").classList.add("hidden")
+            break;
+        case 2:
+            document.getElementById("one1").classList.add("hidden")
+            document.getElementById("two1").classList.remove("hidden")
+            document.getElementById("three1").classList.add("hidden")
+            document.getElementById("four1").classList.add("hidden")
+            break;
+        case 3:
+            document.getElementById("one1").classList.add("hidden")
+            document.getElementById("two1").classList.add("hidden")
+            document.getElementById("three1").classList.remove("hidden")
+            document.getElementById("four1").classList.add("hidden")
+            break;
+        case 4:
+            document.getElementById("one1").classList.add("hidden")
+            document.getElementById("two1").classList.add("hidden")
+            document.getElementById("three1").classList.add("hidden")
+            document.getElementById("four1").classList.remove("hidden")
+            break
+            
+    }
+
+}
+
+function changeImg2(num) {
+    switch(num) {
+        case 1:
+            document.getElementById("one2").classList.remove("hidden")
+            document.getElementById("two2").classList.add("hidden")
+            document.getElementById("three2").classList.add("hidden")
+            document.getElementById("four2").classList.add("hidden")
+            break;
+        case 2:
+            document.getElementById("one2").classList.add("hidden")
+            document.getElementById("two2").classList.remove("hidden")
+            document.getElementById("three2").classList.add("hidden")
+            document.getElementById("four2").classList.add("hidden")
+            break;
+        case 3:
+            document.getElementById("one2").classList.add("hidden")
+            document.getElementById("two2").classList.add("hidden")
+            document.getElementById("three2").classList.remove("hidden")
+            document.getElementById("four2").classList.add("hidden")
+            break;
+        case 4:
+            document.getElementById("one2").classList.add("hidden")
+            document.getElementById("two2").classList.add("hidden")
+            document.getElementById("three2").classList.add("hidden")
+            document.getElementById("four2").classList.remove("hidden")
+            break
+            
+    }
+
+}
