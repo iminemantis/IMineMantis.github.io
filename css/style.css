@@ -33,7 +33,7 @@
 /* header */
 
 header {
-    z-index: 10;
+    z-index: 999999;
 
     position: sticky;
 

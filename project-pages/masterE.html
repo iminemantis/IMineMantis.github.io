@@ -37,20 +37,42 @@
     </header>
 
     <div id="page">
-        <br>
         <div class="title">
             <h1>Master of Enchanting</h1>
         </div>
-
-        <br>
-        <br>
+        
         <hr>
-        <br>
 
         <p>This render is based of a render my friend had made a couple of years before. They had stopped doing 3D moddeling at this point and at the time i didnt know what to make so i asked if they were okay with me remaking it. After i got permission i went about remaking the render.</p>
 
-        <div class="bar" style="background-image: url(/images/renders/master-echant);"></div>
+        <div class="img-comp-container">
+            <div class="img-comp-img">
+                <img src="/images/renders/master-E/render/comp.png">
+            </div>
+            <div class="img-comp-img img-comp-overlay">
+                <img src="/images/renders/master-E/render/rend.png">
+            </div>
+        </div>
 
+        <script>
+            setTimeout(initComparisons, 100)
+        </script>
+
+        <div class="images">
+
+            <div class="image-big">
+                <img src="/images/renders/master-E/render/col.png" alt="" class="" id="one1">
+                <img src="/images/renders/master-E/render/norm.png" alt="" class="hidden" id="two1">
+                <img src="/images/renders/master-E/render/depth.png" alt="" class="hidden" id="three1">
+            </div>
+
+            <div class="small-images">
+
+                <img src="/images/renders/master-E/render/col.png" alt="" onmouseover="changeImg1(1)">
+                <img src="/images/renders/master-E/render/norm.png" alt="" onmouseover="changeImg1(2)">
+                <img src="/images/renders/master-E/render/depth.png" alt="" onmouseover="changeImg1(3)">
+            </div>
+        </div>
 
     </div>
 

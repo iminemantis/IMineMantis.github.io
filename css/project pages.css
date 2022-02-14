@@ -6,6 +6,11 @@
 
 h1 {
     font-size: 3em;    
+    padding: 2%;
+}
+
+p {
+    padding: 5vh 10vw;
 }
 
 /*split layout code*/
@@ -130,6 +135,47 @@ h1 {
         display: none;
     }
 }
+
+
+
+/* image compairer */
+.img-comp-container {
+    position: relative;
+    min-height: 55vw;
+
+    height: 100%; /*should be the same height as the images*/
+
+    padding: 0 5% 5%;
+    align-items: center;
+}
+
+.img-comp-img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    overflow:hidden;
+}
+
+.img-comp-img img {
+    display:block;
+
+    width: 90vw;
+    height: 100%;
+}
+
+.img-comp-slider {
+    position: absolute;
+    z-index:9;
+    cursor: ew-resize;
+
+    /*set the appearance of the slider:*/
+    width: 40px;
+    height: 40px;
+    background-color: var(--col4);
+    opacity: 0.7;
+    border-radius: 50%;
+}
+
 
 /*bottom space*/
 #bottom {
