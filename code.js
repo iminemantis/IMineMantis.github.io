@@ -30,17 +30,17 @@ function changeText(num) {
     switch (num) {
         case 1:
             document.getElementById("blender").classList.remove("hidden")
-            document.getElementById("about-me").classList.add("hidden")
+            // document.getElementById("about-me").classList.add("hidden")
             document.getElementById("natron").classList.add("hidden")
             break;
         case 2:
             document.getElementById("blender").classList.add("hidden")
-            document.getElementById("about-me").classList.remove("hidden")
+            // document.getElementById("about-me").classList.remove("hidden")
             document.getElementById("natron").classList.add("hidden")
             break;
         case 3:
             document.getElementById("blender").classList.add("hidden")
-            document.getElementById("about-me").classList.add("hidden")
+            // document.getElementById("about-me").classList.add("hidden")
             document.getElementById("natron").classList.remove("hidden")
             break;
     }
@@ -133,7 +133,7 @@ function initComparisons() {
         /*insert slider*/
         img.parentElement.insertBefore(slider, img);
         /*position the slider in the middle:*/
-        var t = (window.innerWidth / 100) * 5;
+        var t = (window.innerWidth / 100) * 10;
         slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
         slider.style.left = (w / 2) - (slider.offsetWidth / 2) + t + "px";
         /*execute a function when the mouse button is pressed:*/
@@ -184,7 +184,7 @@ function initComparisons() {
             /*resize the image:*/
             img.style.width = x + "px";
             /*position the slider:*/
-            var t = (window.innerWidth / 100) * 5;
+            var t = (window.innerWidth / 100) * 10;
             slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + t + "px";
         }
     }

@@ -1,0 +1,37 @@
+.split-img-txt {
+    height: 100%;
+    width: 100%;
+
+    padding: 4vh 5vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.split-img-txt img {
+    padding: 5vh 5vw;
+    width: 50%;
+}
+
+.split-img-txt .text-box {
+    padding: 7.5vh 10vw;
+    width: 50%;
+}
+
+.split-img-txt .text-box h1 {
+    padding-bottom: 2vw;
+    font-size: 3rem;
+}
+
+.split-img-txt .text-box h3 {
+    font-size: 1.7rem;
+}
+
+.split-img-txt .text-box p {
+    font-size: 1.4rem;
+}
+
+.split-img-txt .text-box :not(:first-child):not(:last-child) {
+    padding-bottom: 2vh;
+}

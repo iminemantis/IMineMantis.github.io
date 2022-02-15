@@ -157,5 +157,5 @@ hr {
     background-image: -ms-linear-gradient(left, rgba(244, 158, 76,0), rgba(244, 158, 76,1), rgba(244, 158, 76,0));
     background-image: -o-linear-gradient(left, rgba(244, 158, 76,0), rgba(244, 158, 76,1), rgba(244, 158, 76,0));
     border: 0;
-    margin: 0 5vw ;
+    margin: 5vh 5vw ;
 }
